@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListCell?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root type="javafx.scene.control.ListCell" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <graphic>
+        <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="871.0">
+            <children>
+                <GridPane hgap="5.0" layoutX="33.0" layoutY="79.0" vgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b2:" />
+                                <TextField fx:id="b2Tf" editable="false" promptText="b2" />
+                            </children>
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b3:" />
+                                <TextField fx:id="b3Tf" editable="false" promptText="b3" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b4:" />
+                                <TextField fx:id="b4Tf" editable="false" promptText="b4" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b5:" />
+                                <TextField fx:id="b5Tf" editable="false" promptText="b5" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b6:" />
+                                <TextField fx:id="b6Tf" editable="false" promptText="b6" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b7:" />
+                                <TextField fx:id="b7Tf" editable="false" promptText="b7" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b8:" />
+                                <TextField fx:id="b8Tf" editable="false" promptText="b8" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b9:" />
+                                <TextField fx:id="b9Tf" editable="false" promptText="b9" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b10:" />
+                                <TextField fx:id="b10Tf" editable="false" promptText="b10" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b11:" />
+                                <TextField fx:id="b11Tf" editable="false" promptText="b11" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b12:" />
+                                <TextField fx:id="b12Tf" editable="false" promptText="b12" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b13:" />
+                                <TextField fx:id="b13Tf" editable="false" promptText="b13" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b14:" />
+                                <TextField fx:id="b14Tf" editable="false" promptText="b14" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b15:" />
+                                <TextField fx:id="b15Tf" editable="false" promptText="b15" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b16:" />
+                                <TextField fx:id="b16Tf" editable="false" promptText="b16" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b1:" />
+                                <TextField fx:id="b1Tf" editable="false" promptText="b1" />
+                            </children>
+                        </HBox>
+                    </children>
+                </GridPane>
+                <GridPane alignment="CENTER" hgap="5.0" layoutX="518.0" layoutY="61.0" vgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a18:" />
+                                <TextField fx:id="input18Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a18" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a17:" />
+                                <TextField fx:id="input17Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a17" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a16:" />
+                                <TextField fx:id="input16Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a16" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a15:" />
+                                <TextField fx:id="input15Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a15" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a14:" />
+                                <TextField fx:id="input14Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a14" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a13:" />
+                                <TextField fx:id="input13Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a13" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a12:" />
+                                <TextField fx:id="input12Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a12" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a10:" />
+                                <TextField fx:id="input10Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a10" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a11:" />
+                                <TextField fx:id="input11Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a11" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a7:" />
+                                <TextField fx:id="input7Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a7" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a8:" />
+                                <TextField fx:id="input8Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a8" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a9:" />
+                                <TextField fx:id="input9Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a9" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a4:" />
+                                <TextField fx:id="input4Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a4" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a5:" />
+                                <TextField fx:id="input5Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a5" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a6:" />
+                                <TextField fx:id="input6Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a6" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a1:" />
+                                <TextField fx:id="input1Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a1" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a2:" />
+                                <TextField fx:id="input2Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a2" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a3:" />
+                                <TextField fx:id="input3Tx" editable="false" prefHeight="26.0" prefWidth="73.0" promptText="a3" />
+                            </children>
+                        </HBox>
+                    </children>
+                </GridPane>
+                <TextField fx:id="area1Tf" editable="false" layoutX="240.0" layoutY="307.0" text="1" />
+                <Text layoutX="154.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1区面积为:" />
+                <TextField fx:id="area2Tf" editable="false" layoutX="494.0" layoutY="307.0" text="2" />
+                <Text layoutX="415.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2区面积为:" />
+                <TextField fx:id="area3Tf" editable="false" layoutX="240.0" layoutY="344.0" text="3" />
+                <Text layoutX="153.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3区面积为:" />
+                <TextField fx:id="area4Tf" editable="false" layoutX="494.0" layoutY="344.0" text="4" />
+                <Text layoutX="415.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4区面积为:" />
+                <TextField fx:id="area5Tf" editable="false" layoutX="240.0" layoutY="378.0" text="5" />
+                <Text layoutX="153.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5区面积为:" />
+                <TextField fx:id="area6Tf" editable="false" layoutX="494.0" layoutY="379.0" text="6" />
+                <Text layoutX="415.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6区面积为:" />
+                <TextField fx:id="area7Tf" editable="false" layoutX="240.0" layoutY="413.0" text="7" />
+                <Text layoutX="157.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="总面积为:" />
+                <TextField fx:id="remarkTf" editable="false" layoutX="240.0" layoutY="441.0" />
+                <Text layoutX="170.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="备注:" />
+                <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="序号：" />
+                <TextField fx:id="nonceTf" editable="false" layoutX="53.0" layoutY="8.0" />
+                <Text layoutX="516.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="长度">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text layoutX="33.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="角度">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text layoutX="157.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="结果">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+            <Button fx:id="exportBtn" layoutX="732.0" layoutY="358.0" mnemonicParsing="false" text="导出" />
+            </children>
+        </AnchorPane>
+    </graphic>
+</fx:root>
