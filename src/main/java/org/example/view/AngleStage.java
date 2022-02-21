@@ -1,9 +1,9 @@
-package view;
+package org.example.view;
 
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import persistence.FXMLRepository;
+import org.example.persistence.FXMLRepository;
 
 /**
  * @author 罗文俊

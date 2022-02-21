@@ -1,7 +1,7 @@
-package persistence;
+package org.example.persistence;
 
 import com.alibaba.fastjson.JSONObject;
-import model.History;
+import org.example.model.History;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -101,6 +101,9 @@ public class HistoryRepository {
 
     public static Integer getHistoryNonce() {
         Object[] histories = dataQueue.toArray();
+        if (histories.length == 0) {
+            return 0;
+        }
         History history = (History) histories[histories.length - 1];
         if (history == null) {
             return 0;

@@ -1,6 +1,5 @@
-package model;
+package org.example.model;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Stack;
 

@@ -1,6 +1,6 @@
-package persistence;
+package org.example.persistence;
 
-import model.State;
+import org.example.model.State;
 
 /**
  * @author 罗文俊

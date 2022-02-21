@@ -1,4 +1,4 @@
-package persistence;
+package org.example.persistence;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

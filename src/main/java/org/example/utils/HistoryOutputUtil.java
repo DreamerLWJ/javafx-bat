@@ -1,6 +1,6 @@
-package utils;
+package org.example.utils;
 
-import model.History;
+import org.example.model.History;
 
 import java.io.File;
 import java.io.FileNotFoundException;

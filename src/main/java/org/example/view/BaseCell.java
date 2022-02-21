@@ -1,4 +1,4 @@
-package view;
+package org.example.view;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ListCell;

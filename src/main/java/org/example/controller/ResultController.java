@@ -1,4 +1,4 @@
-package controller;
+package org.example.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -7,9 +7,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import model.History;
-import persistence.HistoryRepository;
-import utils.HistoryOutputUtil;
+import org.example.model.History;
+import org.example.persistence.HistoryRepository;
+import org.example.utils.HistoryOutputUtil;
 
 import java.io.File;
 import java.net.URL;

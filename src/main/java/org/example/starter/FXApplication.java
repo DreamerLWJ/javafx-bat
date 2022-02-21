@@ -1,8 +1,8 @@
-package starter;
+package org.example.starter;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import view.MainStage;
+import org.example.view.MainStage;
 
 public class FXApplication extends Application {
 

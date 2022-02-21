@@ -1,13 +1,13 @@
-package view;
+package org.example.view;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import model.History;
-import persistence.FXMLRepository;
-import utils.HistoryOutputUtil;
+import org.example.model.History;
+import org.example.persistence.FXMLRepository;
+import org.example.utils.HistoryOutputUtil;
 
 import java.io.File;
 import java.io.IOException;

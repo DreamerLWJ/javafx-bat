@@ -1,4 +1,4 @@
-package controller;
+package org.example.controller;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -8,12 +8,12 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import model.History;
-import persistence.HistoryRepository;
-import service.CalculateService;
-import view.AngleStage;
-import view.HistoryStage;
-import view.ResultStage;
+import org.example.model.History;
+import org.example.persistence.HistoryRepository;
+import org.example.service.CalculateService;
+import org.example.view.AngleStage;
+import org.example.view.HistoryStage;
+import org.example.view.ResultStage;
 
 import java.net.URL;
 import java.util.ResourceBundle;

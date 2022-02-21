@@ -1,9 +1,9 @@
-package service;
+package org.example.service;
 
-import model.History;
-import model.State;
-import persistence.HistoryRepository;
-import persistence.StateRepository;
+import org.example.model.History;
+import org.example.model.State;
+import org.example.persistence.HistoryRepository;
+import org.example.persistence.StateRepository;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

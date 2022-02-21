@@ -1,13 +1,13 @@
-package controller;
+package org.example.controller;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
-import model.History;
-import persistence.HistoryRepository;
-import view.HistoryCell;
+import org.example.model.History;
+import org.example.persistence.HistoryRepository;
+import org.example.view.HistoryCell;
 
 import java.io.IOException;
 import java.net.URL;
