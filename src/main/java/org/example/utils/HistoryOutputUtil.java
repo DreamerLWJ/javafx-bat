@@ -43,6 +43,13 @@ public class HistoryOutputUtil {
             printWriter.println((i + 1) + "区面积为：" + r[i]);
         }
         printWriter.println("总面积为：" + r[r.length - 1]);
+
+        printWriter.println("############# 坐标 ##############");
+        double[] x = history.getX();
+        double[] y = history.getY();
+        for (int i = 0; i < x.length; i++) {
+            printWriter.println("x" + (i + 1) + ": " + x[i] + "\t\t" + " y" + (i + 1) + ": " + y[i]);
+        }
         printWriter.flush();
         return true;
     }

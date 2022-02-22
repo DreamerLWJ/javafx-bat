@@ -22,4 +22,8 @@ public class History {
     private String remark;
 
     private String date;
+
+    private double[] x = new double[19];
+
+    private double[] y = new double[19];
 }

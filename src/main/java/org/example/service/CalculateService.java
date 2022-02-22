@@ -75,6 +75,8 @@ public class CalculateService {
         double x18 = -a17 * Math.sin((b16 + b15 + b14) * Math.PI / 180) + x17;
         double x19 = x1;
 
+        double[] x = new double[]{x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16, x17, x18, x19};
+
 
         double y1 = 0;
         double y2 = -a1 * Math.cos(b1 * Math.PI / 180) + y1;
@@ -95,6 +97,8 @@ public class CalculateService {
         double y17 = a16 * Math.cos((b15 + b14) * Math.PI / 180) + y16;
         double y18 = -a17 * Math.cos((b16 + b15 + b14) * Math.PI / 180) + y17;
         double y19 = -a18 + y15;
+
+        double[] y = new double[]{y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14, y15, y16, y17, y18, y19};
 
 
         double r1 = 0.5 * Math.abs(x3 * y13 - y3 * x13 + x13 * y14 - y13 * x14 + x14 * y10 - y14 * x10 + x10 * y3 - y10 * x3);
@@ -117,7 +121,9 @@ public class CalculateService {
                 .setDate(date)
                 .setR(r)
                 .setRemark(remark)
-                .setId(HistoryRepository.getHistoryNonce() + 1);
+                .setId(HistoryRepository.getHistoryNonce() + 1)
+                .setX(x)
+                .setY(y);
         return history;
     }
 }
