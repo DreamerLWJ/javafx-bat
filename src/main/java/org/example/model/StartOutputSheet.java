@@ -24,4 +24,7 @@ public class StartOutputSheet {
 
     @ExcelProperty("引用文献")
     private String citation;
+
+    @ExcelProperty("软件开发")
+    private String developer;
 }
