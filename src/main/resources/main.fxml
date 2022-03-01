@@ -34,6 +34,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
+            <TextField fx:id="input1Tx" prefHeight="26.0" prefWidth="73.0" promptText="a1" />
             <TextField fx:id="input2Tx" prefHeight="26.0" prefWidth="73.0" promptText="a2" GridPane.columnIndex="1" />
             <TextField fx:id="input3Tx" prefHeight="26.0" prefWidth="73.0" promptText="a3" GridPane.columnIndex="2" />
             <TextField fx:id="input4Tx" prefHeight="26.0" prefWidth="73.0" promptText="a4" GridPane.rowIndex="1" />
@@ -51,10 +52,9 @@
             <TextField fx:id="input16Tx" prefHeight="26.0" prefWidth="73.0" promptText="a16" GridPane.rowIndex="5" />
             <TextField fx:id="input17Tx" prefHeight="26.0" prefWidth="73.0" promptText="a17" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <TextField fx:id="input18Tx" prefHeight="26.0" prefWidth="73.0" promptText="a18" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <TextField fx:id="input1Tx" prefHeight="26.0" prefWidth="73.0" promptText="a1" />
          </children>
       </GridPane>
-      <TextField fx:id="remarkTx" layoutX="564.0" layoutY="315.0" promptText="备注" />
+      <TextField fx:id="remarkTx" layoutX="564.0" layoutY="314.0" promptText="备注" />
 
        <Text layoutX="71.0" layoutY="445.0" text="岳阳,胡宜峰,雷博宇,吴毅,吴华,刘宝权,余文华.毛翼管鼻蝠性二型特征及其在湖北和浙江的分布新纪录[J].兽类学报,2019,39(02):142-154.DOI:10.16829/j.slxb.150251.">
          <font>
