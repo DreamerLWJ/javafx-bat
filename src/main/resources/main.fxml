@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="481.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.MainController">
+<AnchorPane prefHeight="481.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.MainController">
    <children>
-      <ImageView fx:id="imageView" fitWidth="400.0" layoutX="14.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageView" fitWidth="400.0" layoutX="55.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@images/batmain.png" />
       </ImageView>
-      <Text layoutX="530.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="请输入相关长度值(mm)">
+      <Text layoutX="609.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="请输入相关长度值(mm)">
          <font>
             <Font size="20.0" />
          </font></Text>
 
-      <Button fx:id="viewRecordBtn" layoutX="471.0" layoutY="370.0" mnemonicParsing="false" text="查看记录" />
-      <Button fx:id="modifyAngleBtn" layoutX="564.0" layoutY="370.0" mnemonicParsing="false" text="修改角度" />
-      <Button fx:id="clearBtn" layoutX="660.0" layoutY="370.0" mnemonicParsing="false" text="清除" />
-      <Button fx:id="calculateBtn" layoutX="728.0" layoutY="370.0" mnemonicParsing="false" text="计算" />
-      <GridPane layoutX="471.0" layoutY="114.0">
+      <Button fx:id="viewRecordBtn" layoutX="566.0" layoutY="367.0" mnemonicParsing="false" text="查看记录" />
+      <Button fx:id="modifyAngleBtn" layoutX="659.0" layoutY="367.0" mnemonicParsing="false" text="修改角度" />
+      <Button fx:id="clearBtn" layoutX="755.0" layoutY="367.0" mnemonicParsing="false" text="清除" />
+      <Button fx:id="calculateBtn" layoutX="823.0" layoutY="367.0" mnemonicParsing="false" text="计算" />
+      <GridPane layoutX="564.0" layoutY="117.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -40,7 +34,6 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField fx:id="input1Tx" prefHeight="26.0" prefWidth="73.0" promptText="a1" />
             <TextField fx:id="input2Tx" prefHeight="26.0" prefWidth="73.0" promptText="a2" GridPane.columnIndex="1" />
             <TextField fx:id="input3Tx" prefHeight="26.0" prefWidth="73.0" promptText="a3" GridPane.columnIndex="2" />
             <TextField fx:id="input4Tx" prefHeight="26.0" prefWidth="73.0" promptText="a4" GridPane.rowIndex="1" />
@@ -58,8 +51,14 @@
             <TextField fx:id="input16Tx" prefHeight="26.0" prefWidth="73.0" promptText="a16" GridPane.rowIndex="5" />
             <TextField fx:id="input17Tx" prefHeight="26.0" prefWidth="73.0" promptText="a17" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <TextField fx:id="input18Tx" prefHeight="26.0" prefWidth="73.0" promptText="a18" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="input1Tx" prefHeight="26.0" prefWidth="73.0" promptText="a1" />
          </children>
       </GridPane>
-      <TextField fx:id="remarkTx" layoutX="473.0" layoutY="310.0" promptText="备注" />
+      <TextField fx:id="remarkTx" layoutX="564.0" layoutY="315.0" promptText="备注" />
+
+       <Text layoutX="40.0" layoutY="447.0" text="岳阳,胡宜峰,雷博宇,吴毅,吴华,刘宝权,余文华.毛翼管鼻蝠性二型特征及其在湖北和浙江的分布新纪录[J].兽类学报,2019,39(02):142-154.DOI:10.16829/j.slxb.150251.">
+         <font>
+            <Font size="11.0" />
+         </font></Text>
    </children>
 </AnchorPane>
