@@ -7,6 +7,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.example.model.History;
 import org.example.persistence.FXMLRepository;
+import org.example.utils.ExcelOutputUtil;
 import org.example.utils.HistoryOutputUtil;
 
 import java.io.File;
@@ -175,7 +176,7 @@ public class HistoryCell extends ListCell<History> {
         exportBtn.setOnAction(actionEvent -> {
             FileChooser fileChooser = new FileChooser();
             fileChooser.setTitle("导出结果");
-            fileChooser.setInitialFileName("export.txt");
+            fileChooser.setInitialFileName("export.xlsx");
             File file = fileChooser.showSaveDialog(stage);
             if (file == null) {
                 Alert alert = new Alert(Alert.AlertType.WARNING);
@@ -184,7 +185,7 @@ public class HistoryCell extends ListCell<History> {
                 return;
             }
             System.out.println(file.getAbsolutePath());
-            if (HistoryOutputUtil.prettyOutput(history, file)) {
+            if (ExcelOutputUtil.historyExcelOutput(history, file)) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setContentText("导出成功！");
                 alert.show();
