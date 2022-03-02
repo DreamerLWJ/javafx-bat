@@ -28,7 +28,7 @@ public final class ExcelOutputUtil {
             startOutputSheet.setNum(history.getId())
                     .setRemark(history.getRemark())
                     .setRecordDate(history.getDate())
-                    .setDeveloper("软件开发：余文华、范宏献、罗文俊")
+                    .setDeveloper("软件开发：余文华、范宏猷、罗文俊")
                     .setCitation("岳阳,胡宜峰,雷博宇,吴毅,吴华,刘宝权,余文华.毛翼管鼻蝠性二型特征及其在湖北和浙江的分布新纪录[J].兽类学报,2019,39(02):142-154.DOI:10.16829/j.slxb.150251.");
             return Collections.singleton(startOutputSheet);
         }, writeSheet);
