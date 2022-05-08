@@ -62,5 +62,6 @@
          </font></Text>
 
        <Text layoutX="734.0" layoutY="26.0" text="软件开发：余文华、范宏猷、罗文俊" />
+      <Button fx:id="batchBtn" layoutX="798.0" layoutY="314.0" mnemonicParsing="false" text="批量计算" />
    </children>
 </AnchorPane>

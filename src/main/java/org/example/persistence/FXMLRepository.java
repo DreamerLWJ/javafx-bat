@@ -51,4 +51,14 @@ public class FXMLRepository {
         }
         return resultScene;
     }
+
+    public static Parent getBatch() {
+        Parent batchScene = null;
+        try {
+            batchScene = FXMLLoader.load(Objects.requireNonNull(FXMLRepository.class.getClassLoader().getResource("batch.fxml")));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return batchScene;
+    }
 }

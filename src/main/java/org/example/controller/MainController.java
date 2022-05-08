@@ -12,6 +12,7 @@ import org.example.model.History;
 import org.example.persistence.HistoryRepository;
 import org.example.service.CalculateService;
 import org.example.view.AngleStage;
+import org.example.view.BatchStage;
 import org.example.view.HistoryStage;
 import org.example.view.ResultStage;
 
@@ -82,6 +83,9 @@ public class MainController implements Initializable {
      * 图片显示器
      */
     public ImageView imageView;
+
+    @FXML
+    public Button batchBtn;
     private TextField[] textFields;
     private CalculateService calculateService = new CalculateService();
 
@@ -141,12 +145,13 @@ public class MainController implements Initializable {
             }
         });
 
-        viewRecordBtn.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                // 查看历史记录的处理
-                new HistoryStage();
-            }
+        viewRecordBtn.setOnAction(actionEvent -> {
+            // 查看历史记录的处理
+            new HistoryStage();
+        });
+
+        batchBtn.setOnAction(event -> {
+            new BatchStage();
         });
     }
 }
