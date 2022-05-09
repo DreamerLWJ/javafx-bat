@@ -12,6 +12,7 @@ import org.example.model.LengthInputSheet;
 import org.example.model.ResultOutputSheet;
 import org.example.service.CalculateService;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,53 +48,13 @@ public class DataInputUtil {
     private static CalculateService calculateService = new CalculateService();
 
 
-    public static List<LengthInputSheet> readExcel(String readPath) {
-        ExcelReaderBuilder read = EasyExcel.read(readPath);
+    public static List<LengthInputSheet> readExcel(File readFile) {
+        ExcelReaderBuilder read = EasyExcel.read(readFile);
         return read.head(LengthInputSheet.class).sheet(0).doReadSync();
     }
 
-    public static void writeExcel(String writePath, List<ResultOutputSheet> data) {
-        ExcelWriterBuilder write = EasyExcel.write(writePath);
+    public static void writeExcel(File outputFile, List<ResultOutputSheet> data) {
+        ExcelWriterBuilder write = EasyExcel.write(outputFile);
         write.head(ResultOutputSheet.class).sheet("结果信息").doWrite(data);
-    }
-
-    public static void main(String[] args) {
-        List<LengthInputSheet> lengthInputSheets = readExcel("D:\\work\\UpFile\\javafx-bat\\src\\main\\java\\org\\example\\model\\test.xlsx");
-        List<ResultOutputSheet> resultOutputSheets = new ArrayList<>();
-        for (LengthInputSheet lengthInputSheet : lengthInputSheets) {
-            double[] a = new double[18];
-            a[0] = lengthInputSheet.getA1();
-            a[1] = lengthInputSheet.getA2();
-            a[2] = lengthInputSheet.getA3();
-            a[3] = lengthInputSheet.getA4();
-            a[4] = lengthInputSheet.getA5();
-            a[5] = lengthInputSheet.getA6();
-            a[6] = lengthInputSheet.getA7();
-            a[7] = lengthInputSheet.getA8();
-            a[8] = lengthInputSheet.getA9();
-            a[9] = lengthInputSheet.getA10();
-            a[10] = lengthInputSheet.getA11();
-            a[11] = lengthInputSheet.getA12();
-            a[12] = lengthInputSheet.getA13();
-            a[13] = lengthInputSheet.getA14();
-            a[14] = lengthInputSheet.getA15();
-            a[15] = lengthInputSheet.getA16();
-            a[16] = lengthInputSheet.getA17();
-            a[17] = lengthInputSheet.getA18();
-            History s = calculateService.calculate(a, "s");
-            ResultOutputSheet resultOutputSheet = new ResultOutputSheet();
-
-            resultOutputSheet.setId(lengthInputSheet.getId());
-            resultOutputSheet.setArea1(s.getR()[0]);
-            resultOutputSheet.setArea2(s.getR()[1]);
-            resultOutputSheet.setArea3(s.getR()[2]);
-            resultOutputSheet.setArea4(s.getR()[3]);
-            resultOutputSheet.setArea5(s.getR()[4]);
-            resultOutputSheet.setArea6(s.getR()[5]);
-            resultOutputSheet.setTotalArea(s.getR()[6]);
-            resultOutputSheets.add(resultOutputSheet);
-        }
-
-        writeExcel("D:\\work\\UpFile\\javafx-bat\\src\\main\\java\\org\\example\\model\\result.xlsx", resultOutputSheets);
     }
 }

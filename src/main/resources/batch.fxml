@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.controller.BatchController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.BatchController">
+   <children>
+      <Button fx:id="loadBtn" layoutX="133.0" layoutY="114.0" mnemonicParsing="false" text="载入文件" />
+      <TextField fx:id="loadedTf" layoutX="85.0" layoutY="189.0" promptText="文件中有效数据数量" />
+      <Button fx:id="calculateBtn" layoutX="400.0" layoutY="114.0" mnemonicParsing="false" text="计算" />
+      <Button fx:id="exportBtn" layoutX="393.0" layoutY="189.0" mnemonicParsing="false" text="导出结果" />
+   </children>
 </AnchorPane>
