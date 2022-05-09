@@ -8,7 +8,7 @@ import lombok.Data;
  * 2022/5/8
  */
 @Data
-public class ResultOutputSheet {
+public class AreaBatchOutputSheet {
     @ExcelProperty("编号")
     private String id;
 

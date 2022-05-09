@@ -1,9 +1,9 @@
 package org.example.persistence;
 
+import org.example.model.CoordinateBatchOutputSheet;
 import org.example.model.LengthInputSheet;
-import org.example.model.ResultOutputSheet;
+import org.example.model.AreaBatchOutputSheet;
 
-import javax.xml.transform.Result;
 import java.util.List;
 
 /**
@@ -13,14 +13,16 @@ import java.util.List;
 public class BatchCache {
     private static List<LengthInputSheet> inputData;
 
-    private static List<ResultOutputSheet> outputData;
+    private static List<AreaBatchOutputSheet> outputAreaData;
+
+    private static List<CoordinateBatchOutputSheet> outputCoorData;
 
     public static boolean isInputReady() {
         return inputData != null && inputData.size() != 0;
     }
 
     public static boolean isOutputReady() {
-        return outputData != null && outputData.size() != 0;
+        return outputAreaData != null && outputAreaData.size() != 0;
     }
 
     public static void saveInputCache(List<LengthInputSheet> lengthInputSheets) {
@@ -31,12 +33,20 @@ public class BatchCache {
         return inputData;
     }
 
-    public static List<ResultOutputSheet> getOutputData() {
-        return outputData;
+    public static List<AreaBatchOutputSheet> getOutputAreaData() {
+        return outputAreaData;
     }
 
-    public static void saveOutputCache(List<ResultOutputSheet> resultOutputSheets) {
-        outputData = resultOutputSheets;
+    public static List<CoordinateBatchOutputSheet> getOutputCoorData() {
+        return outputCoorData;
+    }
+
+    public static void saveOutputAreaCache(List<AreaBatchOutputSheet> areaBatchOutputSheets) {
+        outputAreaData = areaBatchOutputSheets;
+    }
+
+    public static void saveOutputCoorCache(List<CoordinateBatchOutputSheet> coordinateBatchOutputSheets) {
+        outputCoorData = coordinateBatchOutputSheets;
     }
 
     public static void clearInput() {
@@ -46,6 +56,7 @@ public class BatchCache {
     public static void clearAll() {
         // gc to clear
         inputData = null;
-        outputData = null;
+        outputAreaData = null;
+        outputCoorData = null;
     }
 }
